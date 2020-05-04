@@ -1,4 +1,0 @@
-import datetime
-ts_epoch = 1582555951676//1000
-ts = datetime.datetime.fromtimestamp(ts_epoch).strftime('%Y-%m-%d %H:%M:%S')
-print(ts)

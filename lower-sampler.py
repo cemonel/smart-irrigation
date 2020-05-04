@@ -1,14 +1,14 @@
-fp = open('data/1.csv', 'r')
-fw = open('data/1-lowered.csv', 'w')
+file_number = 8
+fw = open(f'low_sample_data/{file_number}.csv', 'w')
 
-filepath = 'data/1.csv'
+filepath = f'data/{file_number}.csv'
 with open(filepath) as fp:
-   line = fp.readline()
-   fw.write (line)
-   line = fp.readline()
-   cnt = 0
-   while line:
-        if cnt % 180 == 0:
-           fw.write (line)
+    line = fp.readline()
+    fw.write(line)
+    line = fp.readline()
+    cnt = 0
+    while line:
+        if cnt % 360 == 0:
+            fw.write(line)
         line = fp.readline()
         cnt = cnt + 1
